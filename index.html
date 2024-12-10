@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="flow">
         <nav>
-            <ul>
-                <li>TVA Nyheter</li>
+            <ul class="grid" role="list">
+                <li><a href="/index.html">TVA Nyheter</a></li>
             </ul>
-            <ul>
-                <li>Nyheter</li>
+            <ul class="grid" role="list">
+                <li><a href="/index.html">Nyheter</a></li>
                 <li>Lokalt</li>
                 <li>Sport</li>
                 <li>TVA Play</li>
@@ -26,16 +26,33 @@
             </ul>
         </nav>
 
-        <div class="article">
-            <h1>Coronaviruset</h1>
-            <p>Coronaviruset sprider sig snabbt i Sverige. Här hittar du allt om det senaste kring viruset.</p>
-        </div>
 
-        <div class="article">
-            <h1>Älg på väg</h1>
-            <p>En älg har setts på väg 45. Polisen uppmanar till försiktighet.</p>
-        </div>
+        <article class="region">
+            <div class="wrapper flow prose">
+                <h1>Nyheter</h1>
+                <ul class="grid" role="list" data-rows="masonry" data-layput="50-50">
+                    <li class="card flow">
+                        <a href="/coronaviruset.html">
+                            <div class="card">
+                                <h2>Coronaviruset</h2>
+                                <img src="/public/img/corona.png" alt="corona viruset">
+                                <p>Coronaviruset sprider sig snabbt i Sverige. Här hittar du allt om det senaste kring
+                                    viruset.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="article">
+                                <h1>Älg på väg</h1>
+                                <p>En älg har setts på väg 45. Polisen uppmanar till försiktighet.</p>
+                            </div>
+                        </article>
+                    </li>
 
+                </ul>
+            </div>
+        </article>
     </main>
 </body>
 
