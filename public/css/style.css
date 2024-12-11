@@ -253,9 +253,9 @@ main:focus {
 }
 
 .card {
-    background: var(--color-dark);
+    background: var(--color-light-glare);
     border-radius: var(--border-radius);
-    color: var(--color-light);
+    color: var(--color-dark);
     max-width: unset;
     padding: var(--space-m-l)
 }
@@ -489,6 +489,7 @@ main:focus {
 }
 
 header {
+    background-color: var(--color-light-glare);
     border-bottom: #c50000 2px solid;
 }
 
@@ -518,6 +519,7 @@ header {
 
 .nav-link {
     transition: 0.6s ease;
+  /*   border-left: 1px solid var(--color-dark); */
 }
 
 .nav-link:hover {
@@ -566,7 +568,9 @@ header {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: var(--color-light);
+        background-color: var(--color-light-glare);
+        border-bottom: var(--color-secondary) 2px solid;
+        border-top: var(--color-secondary) 2px solid;
     }
 
     nav-item {
