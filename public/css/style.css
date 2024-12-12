@@ -182,7 +182,7 @@ h3 {
 }
 
 h1 {
-    font-size: var(--size-step-5)
+    font-size: var(--size-step-4)
 }
 
 h2 {
@@ -190,7 +190,7 @@ h2 {
 }
 
 h3 {
-    font-size: var(--size-step-3)
+    font-size: var(--size-step-2)
 }
 
 blockquote:not([class]),
@@ -227,7 +227,9 @@ svg {
 }
 
 a {
-    color: currentcolor
+    color: currentcolor;
+    text-decoration: none;
+
 }
 
 a:hover {
@@ -257,12 +259,13 @@ main:focus {
     border-radius: var(--border-radius);
     color: var(--color-dark);
     max-width: unset;
-    padding: var(--space-m-l)
+    padding: var(--space-m-l);
 }
 
 .card ::selection {
     background: var(--color-secondary);
-    color: var(--color-dark)
+    color: var(--color-dark);
+    border-top: 4px solid var(--color-secondary);
 }
 
 .curve {
@@ -387,8 +390,7 @@ main:focus {
 
 .grid {
     display: grid;
-    gap: var(--gutter, var(--space-s-l));
-    grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr))
+    grid-template-columns: 1;
 }
 
 .grid[data-rows=masonry] {
@@ -440,7 +442,11 @@ main:focus {
 
 .region {
     padding-bottom: var(--region-space, var(--space-l-2xl));
-    padding-top: var(--region-space, var(--space-l-2xl))
+    padding-top: var(--region-space, var(--space-l-2xl));
+}
+
+#background {
+    background-color: var(--color-light-glare);
 }
 
 .wrapper {
@@ -449,6 +455,8 @@ main:focus {
     max-width: var(--wrapper-max-width, 85rem);
     padding-left: var(--gutter);
     padding-right: var(--gutter);
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
     position: relative
 }
 
@@ -473,7 +481,7 @@ main:focus {
 }
 
 .flow-space-s-m {
-    --flow-space: clamp(1rem, 0.73rem + 1.36vw, 1.875rem)
+    --flow-space: clamp(1rem, 0.73rem + 1.36vw, 1.875rem);
 }
 
 .flow-space-2xl-3xl {
@@ -490,9 +498,8 @@ main:focus {
 
 header {
     background-color: var(--color-light-glare);
-    border-bottom: #c50000 2px solid;
+    border-bottom: var(--color-secondary) 2px solid;
 }
-
 
 .navbar {
     z-index: 1;
@@ -516,12 +523,11 @@ header {
 .nav-brand {
     font-size: 2rem;
     font-weight: 70;
-    color: #fff;
+    color: var(--color-light);
 }
 
 .nav-link {
     transition: 0.6s ease;
-    /*   border-left: 1px solid var(--color-dark); */
 }
 
 .nav-link:hover {
