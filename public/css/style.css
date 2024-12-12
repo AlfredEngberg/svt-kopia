@@ -156,7 +156,7 @@ textarea {
     --font-base: Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     --font-serif: Georgia, sans-serif;
     --gutter: var(--space-s-m);
-    --border-radius: var(--size-step-1);
+    --border-radius: var(--size-step-0);
     --transition-base: 250ms ease;
     --transition-movement: 200ms linear;
     --transition-fade: 200ms ease;
