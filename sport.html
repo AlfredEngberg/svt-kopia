@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .with-sidebar {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex-basis: 20rem;
+            flex-grow: 1;
+        }
+
+        .not-sidebar {
+            flex-basis: 0;
+            flex-grow: 999;
+        }
+    </style>
+</head>
+
+<body class="with-sidebar">
+    <main class="not-sidebar">
+        <h1>not sidebar</h1>
+        <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex inventore iure architecto sunt nesciunt facilis placeat beatae dolor accusamus, vero delectus rem ipsum enim eaque aliquid commodi magni incidunt quis.</span><span>Autem mollitia reiciendis, neque, sapiente nemo repellat modi aspernatur magni obcaecati impedit eos, a perspiciatis maiores necessitatibus? Ut est repellendus deleniti! Unde, quisquam quod. Optio natus eligendi nesciunt rem asperiores!</span><span>Non deleniti libero, tempora beatae consequatur magni nam sapiente amet ut quasi. Vitae esse fugiat qui veniam, excepturi deserunt exercitationem. Veritatis neque sint unde reprehenderit aut provident optio nemo eos?</span><span>Perspiciatis veniam ratione voluptates optio quae odit nobis debitis expedita impedit, ut et vitae qui at eum. Quas, illo libero non amet tempore voluptate modi, ex temporibus et doloremque possimus.</span></p>
+    </main>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">nåt</a></li>
+            <li><a href="#">något</a></li>
+            <li><a href="#">gågonting</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
