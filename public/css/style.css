@@ -269,6 +269,25 @@ main:focus {
     border-top: 4px solid var(--color-secondary);
 }
 
+.screamer {
+    display: inline;
+    margin: 1rem 0;
+}
+
+.screamer h2 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.screamer-card {
+    background: var(--color-light-glare);
+    border-radius: var(--border-radius);
+    color: var(--color-dark);
+    max-width: unset;
+    padding: var(--space-s-m);
+    border-top: 1px solid var(--color-secondary);
+}
+
 .curve {
     fill: var(--spot-color, var(--color-light));
     display: block;
