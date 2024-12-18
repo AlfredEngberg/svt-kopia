@@ -263,6 +263,14 @@ main:focus {
     border-top: 1px solid var(--color-secondary);
 }
 
+.card img {
+    overflow: hidden;
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
 .card ::selection {
     background: var(--color-secondary);
     color: var(--color-dark);
@@ -270,21 +278,29 @@ main:focus {
 }
 
 .screamer {
+    place-content: center;
     display: inline;
-    margin: 1rem 0;
 }
 
 .screamer h2 {
     font-size: 1.5rem;
-    color: var(--color-secondary);
+    padding: var(--size-step-1);
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border-radius: var(--border-radius);
+}
+
+.screamer p {
+    padding: var(--size-step-0);
+    color: var(--color-dark);
 }
 
 .screamer-card {
+    display: flex;
     background: var(--color-light-glare);
     border-radius: var(--border-radius);
     color: var(--color-dark);
     max-width: unset;
-    padding: var(--space-s-m);
     border-top: 1px solid var(--color-secondary);
 }
 
@@ -483,18 +499,6 @@ main:focus {
 
 .mt-l-xl {
     margin-top: clamp(2rem, 1.46rem + 2.72vw, 3.75rem)
-}
-
-.block {
-    display: block
-}
-
-.inline {
-    display: inline
-}
-
-.grid {
-    display: grid
 }
 
 .filter {
