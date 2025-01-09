@@ -258,6 +258,7 @@ main:focus {
     background: var(--color-light-glare);
     border-radius: var(--border-radius);
     color: var(--color-dark);
+    min-width: unset;
     max-width: unset;
     padding: var(--space-m-l);
     border-top: 1px solid var(--color-secondary);
@@ -280,6 +281,7 @@ main:focus {
 .screamer {
     place-content: center;
     display: inline;
+    box-sizing: border-box;
 }
 
 .screamer h2 {
@@ -639,7 +641,7 @@ article {
 }
 
 article ul {
-    margin-top: 0;
+    margin-top: var(--space-s-m);
 
     li {
         max-width: unset;
