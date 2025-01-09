@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <main class="flow">
         <header>
             <nav class="navbar">
-                <a href="/index.html" class="nav-branding">TVA Nyheter | Lokalt </a>
+                <a href="/index.html" class="nav-branding">TVA Nyheter</a>
 
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -48,65 +48,87 @@
                 </div>
             </nav>
         </header>
-        <script src="/public/js/script.js"></script>
 
+        <article class="with-sidebar wrapper">
+            <main class="not-sidebar">
 
-        <article class="region">
-            <div class="wrapper flow prose">
-                <ul class="grid" role="list" data-rows="masonry" data-layput="50-50">
+                <div class="screamer">
+                    <ul class="grid">
+                        <li>
+                            <a href="#">
+                                <div class="screamer-card">
+                                    <h2>JUST NU</h2>
+                                    <p>Lokal apa rymt från zoo</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="wrapper flow prose">
+                    <div class="not-sidebar">
+                        <h1>Nyheter</h1>
+                        <ul class="grid" role="list" data-rows="masonry" data-layput="50-50">
+                            <li>
+                                <a href="/bilOlycka.html">
+                                    <div class="card">
+                                        <img src="/public/img/BilOlycka.png" alt="bilolycka">
+                                        <h2>Olycka på E4:an strax söder om Umeå</h2>
+                                        <p>Polisen uppmanar att välja annan väg om möjligt.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bilOlycka.html">
+                                    <div class="card">
+                                        <img src="/public/img/BilOlycka.png" alt="bilolycka">
+                                        <h2>Olycka på E4:an strax söder om Umeå</h2>
+                                        <p>Polisen uppmanar att välja annan väg om möjligt.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bilOlycka.html">
+                                    <div class="card">
+                                        <img src="/public/img/BilOlycka.png" alt="bilolycka">
+                                        <h2>Olycka på E4:an strax söder om Umeå</h2>
+                                        <p>Polisen uppmanar att välja annan väg om möjligt.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+            <nav class="sidebar">
+                <ul class="grid">
                     <li>
-                        <a href="/bilOlycka.html">
+                        <a href="/lokalApaDushcar.html">
                             <div class="card">
-                                <img src="/public/img/BilOlycka.png" alt="bilolycka">
-                                <h2>Olycka på E4:an strax söder om Umeå</h2>
-                                <p>Polisen uppmanar att välja annan väg om möjligt.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/bilOlycka.html">
-                            <div class="card">
-                                <img src="/public/img/BilOlycka.png" alt="bilolycka">
-                                <h2>Olycka på E4:an strax söder om Umeå</h2>
-                                <p>Polisen uppmanar att välja annan väg om möjligt.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/bilOlycka.html">
-                            <div class="card">
-                                <img src="/public/img/BilOlycka.png" alt="bilolycka">
-                                <h2>Olycka på E4:an strax söder om Umeå</h2>
-                                <p>Polisen uppmanar att välja annan väg om möjligt.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/bilOlycka.html">
-                            <div class="card">
-                                <img src="/public/img/BilOlycka.png" alt="bilolycka">
-                                <h2>Olycka på E4:an strax söder om Umeå</h2>
-                                <p>Polisen uppmanar att välja annan väg om möjligt.</p>
+                                <img src="/public/img/apa i dusch.jpg" alt="apa som duschar">
+                                <p>Lokal apa duschar</p>
                             </div>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </article>
-    </main>
 
-    <footer class="site-foot" role="contentinfo">
-        <div class="wrapper">
-            <div class="repel">
-                <div class="site-foot_inner">
-                    <p>© 2024 Alfred Engberg</p>
+        <footer class="site-foot" role="contentinfo">
+            <div class="wrapper">
+                <div class="repel">
+                    <div class="site-foot_inner">
+                        <p>© 2024 Alfred Engberg</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Github: <a href="https://github.com/AlfredEngberg">Alfred Engberg</a></p>
                 </div>
             </div>
-            <div>
-                <p>Github: <a href="https://github.com/AlfredEngberg">Alfred Engberg</a></p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        <script src="/public/js/script.js"></script>
+    </main>
 </body>
 
 </html>
